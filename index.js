@@ -1,3 +1,4 @@
+
 // const HTTP = require("http");
 
 // let SERVER=HTTP.createServer();
@@ -15,8 +16,7 @@ let PORT=3000;
 app.listen(PORT,()=>{
     console.log(`Server is Running on  port ${PORT}`);
 });
-
 app.get( '/get' , (req,res) => {
-    console.log("hello diksha");
+    console.log("hello diksha is very good  girl") ;
     res.send({name:'Diksha'});
 });
