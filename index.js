@@ -31,17 +31,23 @@ app.get( '/get' , (req,res) => {
     res.send({name:'Diksha'});
 });
 
-app.post('/post',(req,res)=>{
-    // body
-    // let data=req.body;
-    // console.log((req.body));
-    // res.send(data);
+// app.post('/post',(req,res)=>{
+//     // body
+//     // let data=req.body;
+//     // console.log((req.body));
+//     // res.send(data);
 
-    // console.log("hello");
-    // params
-    // let data=req.query;
-    // console.log(data);
-    // res.send(data);
-})
+//     // console.log("hello");
+//     // params
+//     let data=req.query;
+//     console.log(data);
+//     res.send(data);
+// })
 
+
+app.post('/add/:login/:password' , (req,res) => {
+    let login= req.params.login;
+    let password = req.params.password;
+    res.send({login,password});
+});
 
